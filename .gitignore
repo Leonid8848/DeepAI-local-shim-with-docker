@@ -1,0 +1,11 @@
+# секреты и локальные артефакты
+deepai-key.txt
+*.log
+*.png
+__pycache__/
+.env
+
+# локальное снятие ключа: сертификаты прокси и лаунчер — не для репозитория
+artex-ca.pem
+artex-ca.cer
+deepai-via-artex.cmd

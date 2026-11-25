@@ -1,0 +1,8 @@
+services:
+  deepai-shim:
+    build: .
+    ports:
+      - "127.0.0.1:9100:9100"
+    environment:
+      DEEPAI_API_KEY: ${DEEPAI_API_KEY:?set DEEPAI_API_KEY in .env}
+    restart: unless-stopped
